@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
-
+    <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>%PlaceHolder%</title>
 </head>
@@ -13,33 +16,52 @@
     
     <header>
 
+        <nav>
+            <ul class="flex">
+                <li><a href="#">Temply</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+
+        </nav>
+
         <section class="flex flex-col md:grid md:grid-cols-2 md:items-center gap-8">
             <div class="md:order-2">
                 <img src="assets/hero-flower.png" class="w-full" alt="main-img"/>
             </div>
-            <div class="flex flex-col gap-6 md:order-1">
-                <h1 class="text-5xl text-yellow-700">ALWAYS FRESH FLOWERS</h1>
-                <p class="text-xl text-black">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            <div class="flex flex-col gap-3 md:order-1">
+                <h1>
+                    <span class="text-black text-3xl font-semibold">FRESH</span>
+                    <span class="text-orange-600 text-3xl font-semibold">FLOWERS</span>
+                    <span class="text-orange-600 text-3xl font-semibold">DAILY</span>
+                </h1>
+                <p class="text-xl text-black/50 font-light text-base">
+                    Discover premium quality, handpicked flowers delivered fresh to your doorstep. Our florist-curated arrangements suit every occasion—birthdays, weddings, anniversaries, and more.
+                </p>
             </div>
         </section>
     </header>
 
 
+    <!-- Our Plants -->
     <section>
+        <!-- Reusable Main -->
         <div class="flex flex-col items-center gap-4">
             <h2>
-                <span class="text-green-600 text-4xl font-medium">Our</span>
-                <span class="text-red-600 text-4xl font-medium">Plants</span>
+                <span class="text-orange-600 text-2xl font-semibold">Our</span>
+                <span class="text-black text-2xl font-semibold">Plants</span>
             </h2>
-            <p class="text-center">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <p class="text-center font-light text-black/50 text-base">
+                Explore our hand-selected indoor and outdoor plants designed to bring vibrant life to your home or office. Perfect for gifting or greening your space.
+            </p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 px-2 gap-4 justify-items-center">
-            <div class="flex flex-col items-center gap-2 w-max">
+        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+            <div class="flex flex-col items-center gap-2">
                 <img src="assets/sample-flower-image.png" alt="flower-image" class="w-60"/>
                 <h4 class="text-md text-black font-normal">Lily Blossom</h4>
                 <h5 class="text-md text-black font-bold">20 USD</h5>
-                <button class="bg-orange-700 text-white px-3 py-2 w-max">ADD TO CART</button>
+                <button class="bg-orange-700 text-white px-3 py-2">ADD TO CART</button>
 
             </div>
             <div class="flex flex-col items-center gap-2 w-max">
@@ -61,7 +83,6 @@
                 <h4 class="text-md text-black font-normal">Lily Blossom</h4>
                 <h5 class="text-md text-black font-bold">20 USD</h5>
                 <button class="bg-orange-700 text-white px-3 py-2 w-max">ADD TO CART</button>
-
             </div>
         </div>
 
@@ -74,35 +95,71 @@
             <img src="assets/flower-store.png" class="object-contain"/>
         </div>
 
-        <div class="flex flex-col gap-3 px-16 md:px-0">
-            <h2 class="text-3xl font-semibold">Flowers & Plants Lover</h2>
-            <ul class="list-disc pl-5 text-xl">
-                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+        <div class="flex flex-col gap-4 px-16 md:px-0">
+            <h2 class="text-5xl font-bold text-black">Why Choose Bloomify?</h2>
+            <ul class="list-disc pl-5 flex flex-col gap-5">
+                <li class="text-2xl text-thin text-black/50">Our certified florists craft each bouquet with precision, using only the freshest seasonal flowers to ensure your gift leaves a lasting impression.</li>
+                <li class="text-2xl text-thin text-black/50">We are committed to sustainability through eco-friendly packaging, locally sourced blooms, and practices that reduce floral waste across the supply chain.</li>
+                <li class="text-2xl text-thin text-black/50">Enjoy same-day delivery in major cities nationwide, backed by our trusted customer service and over 5,000 verified 5-star reviews from satisfied flower lovers.</li>
             </ul>
         </div>
     </section>
 
 
+    <!-- DEALS SECTION -->
     <section>
-        
+        <div class="flex flex-col items-center gap-6">
+            <h2>
+                <span class="text-orange-600 text-2xl font-semibold">Latest</span>
+                <span class="text-black text-2xl font-semibold">Deals</span>
+            </h2>
+            <p class="text-center font-light text-black/50 text-base">
+                Save big with our seasonal flower sales and bundle discounts. Limited-time offers on popular blooms—don’t miss out!
+            </p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4">
+            <div class="md:col-span-1 md:row-start-1 flex flex-col gap-4 justify-center items-center rounded-lg bg-[url('assets/deal-ana.png')] bg-no-repeat bg-center bg-cove w-full overflow-hidden bg-black/40 bg-blend-overlay">
+                <h5 class="text-2xl font-bold text-white">60% Off || Bloom Plant</h5>
+                <button class="text-white text-lg text-underline">Shop Now</button>
+            </div>
+            <div class="md:col-span-1 md:row-start-2 flex flex-col gap-4 justify-center items-center rounded-lg bg-[url('assets/deal-bloom.png')] bg-no-repeat bg-center bg-cover w-full overflow-hidden bg-black/40 bg-blend-overlay">
+                <h5 class="text-2xl font-bold text-white">60% Off || Bloom Plant</h5>
+                <button class="text-white text-lg text-underline">Shop Now</button>
+            </div>
+            <div class="md:col-span-2 md:row-span-2 flex flex-col gap-4 justify-center items-center rounded-lg bg-[url('assets/deal-bloom.png')] bg-no-repeat bg-center bg-cover w-full overflow-hidden bg-black/40 bg-blend-overlay">
+                <h5 class="text-2xl font-bold text-white">60% Off || Bloom Plant</h5>
+                <button class="text-white text-lg text-underline">Shop Now</button>
+            </div>
+        </div>
     </section>
 
 
 
+    <section>
+        <div class="md:col-span-2 md:row-span-2 flex flex-col gap-4 justify-center items-center rounded-lg bg-[url('assets/news-letter-bg.png')] bg-no-repeat bg-center bg-cover w-full overflow-hidden bg-black/40 bg-blend-overlay">
+                <h3 class="text-2xl font-bold text-white">60% Off || Bloom Plant</h3>
+                <div class="flex">
+                    <input type="text" placeholder="Enter text" class="w-full p-3 border border-gray-300 rounded-md bg-white text-black outline-none focus:ring-2 focus:ring-blue-500" />
+                    <button class="text-white text-lg text-underline">Shop Now</button>
+                </div>
+                
+        </div>
+
+    </section>
 
 
-    <footer class="py-6 px-10 flex flex-col gap-4 md:grid md:grid-cols-5 md:justify-center">
+
+    <footer class="font-['Inter'] py-6 px-10 flex flex-col gap-4 md:grid md:grid-cols-5 md:justify-center">
         <div class="col-span-2">
             <h1 class="text-4xl text-blue-500">Flower</h1>
-            <p class="text-lg text-green-500">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+            <p class="text-2xl font-light text-black/50">
+                Bloomify is your trusted online flower shop. From daily deliveries to special events, we ensure freshness, beauty, and joy in every bouquet.
+            </p>
         </div>
 
         <ul class="col-span-1">
-            <li><a class="text-gray-500 text-md" href="#">Home</a></li>
-            <li><a class="text-gray-500 text-md" href="#">About Us</a></li>
-            <li><a class="text-gray-500 text-md" href="#">Blog</a></li>
+            <li><a class="text-gray-500 text-base" href="#">Home</a></li>
         </ul>
 
          <ul class="col-span-1">
