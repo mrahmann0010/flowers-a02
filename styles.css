@@ -4,7 +4,16 @@ body {
 
 
 section {
-    padding: 72px 144px;
+    padding: 48px 136px;
+}
+
+.active {
+    font-weight: 500;
+    color: black;
+}
+
+#newsletter {
+    padding: 48px 0;
 }
 
 @media screen and (max-width: 768px) {
